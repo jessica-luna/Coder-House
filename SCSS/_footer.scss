@@ -104,7 +104,7 @@ footer {
     }
 
     div {
-        justify-content: center;
+        justify-content: left;
     }
 }
 
@@ -112,15 +112,14 @@ footer {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .contenidoColumna {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
     padding-left: 10%;
+    justify-items: left;
 }
 
 .contenidoHorizontal {
