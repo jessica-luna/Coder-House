@@ -1,0 +1,60 @@
+body {
+    background-color: $color-fondo;
+	font-family: $fuente-textos;
+	font-size: 1rem;
+}
+
+h2 {
+	color: $color-titulo;
+	font: $fuente-titulo;
+	letter-spacing: 3px;
+	padding-left: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	animation-name: aparecer;
+	animation-duration: 2s;
+}
+
+h3 {
+	color: $color-subtitulos;
+	font: $fuente-subtitulos;
+	letter-spacing: 1px;
+	padding-left: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+h4 {
+	color: $color-texto;
+	font: $fuente-textos;
+}
+
+p {
+	color: $color-parrafos;
+	font: $fuente-textos;
+	padding-left: 15px;
+	padding-top: 15px;
+}
+
+td {
+	color: $color-parrafos;
+	font: $fuente-textos;
+	padding: 15px;
+}
+
+
+a {
+	color: $color-texto;
+}
+
+span {
+	color: $color-texto;
+}
+
+
+div {
+	justify-items: center;
+	align-items: center;
+	justify-content: space-around;
+	align-content: space-around;
+}

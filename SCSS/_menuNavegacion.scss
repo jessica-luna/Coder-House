@@ -1,0 +1,233 @@
+.contenedorNavegador {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	overflow: visible;
+	align-items: center;
+	background-image: linear-gradient($color-principal,$color-secundario);
+	justify-content: space-around;
+	
+	nav {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		padding: 2rem 3rem;
+		background-image: linear-gradient($color-principal,$color-secundario);
+		width: 100%;
+
+		ul {
+			background-image: linear-gradient($color-principal,$color-secundario);
+			list-style: none;
+		
+			li {
+				position: relative;
+				float: left;
+				
+				a {
+					color: $color-menu;
+					text-decoration: none;
+					padding: 15px;
+					font-size: 1.3rem;
+					font-weight: bold;
+				}
+
+				&:hover {
+					color: $color-blanco;
+				font-size: 1.6rem;
+				}
+
+				&:hover>ul {
+					display: block;
+					width: 115% ;
+					overflow: visible;
+				}
+
+				ul {
+					display: none;
+					position: absolute;
+					top: 100%;
+					left: 0;
+					padding: 1rem 0;
+
+					li {
+						padding-top: 7px;
+					}
+				}
+			}
+
+		}
+
+	}
+
+}
+
+#LogIn{
+	position: absolute;
+	right: 3%;
+	text-decoration: none;
+	color: $color-marroncito;
+	font-size:1.3rem;
+	font-weight: bolder;
+	padding-right: 10
+}
+
+/*------------------------------------ Responsive 576px - 900 px (tablets) -----------------------------------*/
+
+@media (max-width: 900px) and (min-width: 576) {
+
+	.contenedorNavegador {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: center;
+		background-image: linear-gradient($color-principal,$color-secundario);
+		justify-content: space-around;
+		
+		nav {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: center;
+			align-items: center;
+			padding: 1rem 2rem;
+			background-image: linear-gradient($color-principal,$color-secundario);
+			width: 100%;
+	
+			ul {
+				background-image: linear-gradient($color-principal,$color-secundario);
+				list-style: none;
+			
+				li {
+					position: relative;
+					float: left;
+					
+					a {
+						color: $color-menu;
+						text-decoration: none;
+						padding: 5px;
+						font-size: 1rem;
+						font-weight: bold;
+					}
+	
+					&:hover {
+						color: $color-blanco;
+						font-size: 1.6rem;
+					}
+	
+					&:hover>ul {
+						display: block;
+						width: 115% ;
+					}
+	
+					ul {
+						display: none;
+						position: absolute;
+						top: 100%;
+						left: 0;
+						padding: 1rem 0;
+	
+						li {
+							padding-top: 7px;
+						}
+					}
+				}
+	
+			}
+	
+		}
+	
+	}
+	
+	#LogIn{
+		position: absolute;
+		right: 3%;
+		text-decoration: none;
+		color: $color-marroncito;
+		font-size:1.3rem;
+		font-weight: bolder;
+		padding-right: 10
+	}
+}
+
+
+
+/*------------------------------------ Responsive 576px (celulares) -----------------------------------*/
+
+@media (max-width: 576px) {
+	
+	.contenedorNavegador {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-items: center;
+		background-image: linear-gradient($color-principal,$color-secundario);
+		justify-content: space-around;
+		
+		nav {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: center;
+			align-items: center;
+			padding: 1rem 2rem;
+			background-image: linear-gradient($color-principal,$color-secundario);
+			width: 100%;
+	
+			ul {
+				background-image: linear-gradient($color-principal,$color-secundario);
+				list-style: none;
+			
+				li {
+					position: relative;
+					float: left;
+					
+					a {
+						color: $color-menu;
+						text-decoration: none;
+						padding: 10px;
+						font-size: 0.8rem;
+						font-weight: bold;
+					}
+	
+					&:hover {
+						color: $color-blanco;
+					font-size: 1.6rem;
+					}
+	
+					&:hover>ul {
+						display: block;
+						width: 115% ;
+					}
+	
+					ul {
+						display: none;
+						position: absolute;
+						top: 100%;
+						left: 0;
+						padding: 1rem 0;
+	
+						li {
+							padding-top: 7px;
+						}
+					}
+				}
+	
+			}
+	
+		}
+	
+	}
+	
+	#LogIn{
+		position: absolute;
+		right: 3%;
+		text-decoration: none;
+		color: $color-marroncito;
+		font-size:1.3rem;
+		font-weight: bolder;
+		padding-right: 10
+	}
+
+}

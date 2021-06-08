@@ -1,0 +1,449 @@
+.coverCarrusel {
+	width: 100%;
+}
+
+/* Sección Nosotros */
+
+#containerNosotros {
+	border-style: ridge;
+	border-width:5px;
+	border-color:$color-principal;
+	margin-top: 20px;
+}
+
+#divTextoNosotros {
+	padding-top: 40px;
+}
+
+#tituloNosotros {
+	padding-top: 20px;
+}
+
+#quienesSomos {
+	padding-left: 5%;
+}
+
+#textoNosotros {
+	text-align: justify;
+	line-height: 150%;
+	padding-top: 20px;
+	padding-left: 5%;
+}
+
+#imagenNosotros {
+	width: fit-content;
+	margin: 15px 15px 15px 0px;
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+
+
+#containerColecciones {
+	background-color: $color-rosaSuave;
+	padding: 10px;
+	height: fit-content;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#tituloColecciones {
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+$listaDeColecciones : Coleccion1, Coleccion2, Coleccion3, Coleccion4;
+
+@each $Colecciones in $listaDeColecciones {
+	#divColumna#{$Colecciones} {
+		border-color: $color-principal;
+		border-width: 3px;
+		border-style: solid;
+		padding: 15px;
+		display: flex;
+		flex-direction: column;
+		align-content: space-around;
+		justify-content: space-around;	
+	}
+}
+
+$listaDeImagenesDeColeccion : ImgColeccion1, ImgColeccion2, ImgColeccion3, ImgColeccion4;
+
+@each $ImagenesCol in $listaDeImagenesDeColeccion {
+	#{$ImagenesCol} {
+		width: fit-content;
+		margin: 10px;
+	}
+}
+
+.botonColeccion{
+	text-decoration: none;
+	text-align: center;
+	color: $color-blanco;
+	font-size: 1rem;
+	font-weight: bold;
+	background-color: $color-principal;
+	padding: 15px;
+	margin: 40px;
+	border-radius: 5px;
+}
+
+.botonColeccion:hover {
+	transform: scale(1.2,1.2);
+	background-image: radial-gradient($color-rosaSuave,$color-principal);
+	color: $color-botonSeleccionado;
+}
+
+
+/* Sección Tiendas */
+
+#containerTiendas {
+	background-color: $color-secundario;
+}
+
+#tituloTiendas {
+	padding-top: 20px;
+	padding-bottom: 10px;
+	background-color: $color-secundario;
+}
+
+
+.seccionTiendasGrid {
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: 50% 50%;
+	grid-template-areas:
+		"mapa mapa tiendaUno tiendaDos"
+		"mapa mapa tiendaTres tiendaCuatro";
+	align-items: center;
+	justify-content: space-around;
+	justify-items: center;
+	height: 80vh;
+}
+
+.divTienda {
+	border-color: $color-principal;
+	border-width: 4px;
+	border-style: outset;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	width: 90%;
+}
+
+
+.titTienda {
+	font-weight: bold;
+}
+
+.direccionTienda {
+	padding: 15px;
+}
+
+#mapaTiendas {
+	grid-area: mapa;
+	width: 60%;
+}
+
+#divTienda1 {
+	grid-area: tiendaUno;
+}
+
+#divTienda2 {
+	grid-area: tiendaDos;
+}
+
+#divTienda3 {
+	grid-area: tiendaTres;
+}
+
+#divTienda4 {
+	grid-area: tiendaCuatro;
+}
+
+
+/* Sección Tendencias */
+
+.SeccionTipo2{
+	padding: 20px 15px 20px 15px;
+	background-color: $color-secundario;
+}
+
+.Tendencias { 		
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 30px;
+}
+
+
+/*-------------------------- Página PRODUCTOS -------------------------- */
+
+
+/*----------- Tabla Listado de Productos -----------*/
+.Tabla{
+	border-spacing:0px;
+	border: 6px;
+	border-color: $color-principal;
+	padding-left: 10%;
+}
+
+.TablaHeader{
+	background-color: $color-rosaSuave;
+	color: $color-cabeceras;
+}
+
+.cabeceraListaProductos{
+	letter-spacing: 1.5px;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 10px;
+}
+
+.ListaColoresProductos{
+	color: $color-texto;
+	list-style-type: square;
+	list-style-position: inside;
+	padding-left: 5px;
+
+}
+
+.ListaDetalleProductos{
+	color: $color-texto;
+	list-style-type: circle;
+	list-style-position: inside;
+	padding-left: 5px;
+}
+
+.ListaTallaProductos{
+	color: $color-texto;
+	list-style-type: disc;
+	list-style-position: inside;
+	padding-left: 5px;
+}
+
+
+.TablaBody{
+	line-height: 1.2;
+}
+
+.TablaFooter{
+	text-align:center;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+}
+
+/*-------------------------- Página COLECCIONES -------------------------- */
+
+
+/* Sección Colecciones */
+
+.paginaColecciones {
+	div {		
+		h2 {
+			text-align: center;
+		}
+		div {
+			div {
+				display: flex;
+				flex-direction: column;
+				justify-items: center;
+				align-items: center;
+				justify-content: center;
+				align-content: center;					
+			}
+		}
+	}
+}
+
+.divColumna {	
+
+	div {	
+			display: block;
+	}
+	
+	a {
+		color: aqua;
+	}
+
+}
+
+.dropdown-menu {
+	visibility: hidden;
+	& .dropdown-menu:hover {
+		visibility:visible;
+	}
+}
+
+.botonDesplegable {
+	border: solid 1px $color-principal;
+	border-radius: 20px;
+	color: $color-blanco;
+	font-size: 1.1rem;
+	text-decoration: none;
+	padding: 10px;
+	background-color: $color-principal;
+	position: relative;
+	justify-content: space-around;
+}
+
+/*-------------------------- Página PREGUNTAS -------------------------- */
+
+#PreguntasFrecuentes{
+	
+	background-image: url("Assets/FondoPreguntas.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+
+.listaNumerada1{
+	padding-left: 30px;
+	list-style: decimal;
+	list-style-position: inside;
+	line-height: 1.5;
+	color: $color-texto;
+	font-weight:bold;
+}
+
+.listaSinNumerar1{
+	padding-left: 30px;
+	list-style: lower-latin;
+	list-style-position: inside;
+	line-height: 1.5;
+	color: $color-texto;
+	font-weight:bold;
+}
+
+.listaSinNumerar2{
+	padding-left: 50px;
+	list-style: disc;
+	list-style-position: inside;
+	line-height: 1.5;
+	color: $color-texto;
+	font-weight:bold;
+}
+
+
+
+/*-------------------------- Página LOG IN -------------------------- */
+
+.bodyLogIn{
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+}
+
+.bodyLogIn header{
+	height: 25vh;
+}
+
+.bodyLogIn main{
+	height: 60vh;
+}
+
+#LogoLogIn{
+	max-width: 10%;
+	margin: 10px;
+}
+
+.CuadroLogIn{
+	display: flex;
+	flex-direction: column;
+	flex:1;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	border-style: solid;
+	border-width: 1px;
+	border-color: $color-texto;
+	padding: 15px;
+}
+
+.CuadroLogIn input{
+	margin: 10px;
+	height: 30px;
+	width: 300px;
+	color: $color-texto;
+	padding: 5px;
+}
+
+#IniciarSesion{
+	font-size: 1.3rem;
+	color: $color-texto;
+	font-weight: bold;
+	margin: 10px;
+}
+
+#BotonIniciarSesion{
+	border: solid 1px $color-principal;
+	border-radius: 20px;
+	color: $color-blanco;
+	font-size: 1.1rem;
+	padding: 5px;
+	background-color: $color-principal;
+}
+
+.bodyLogIn footer{
+	height: 15vh;
+}
+
+.BackHome{
+	border: solid 1px $color-principal;
+	border-radius: 20px;
+	color: $color-blanco;
+	font-size: 1.1rem;
+	text-decoration: none;
+	padding: 10px;
+	background-color: $color-principal;
+	position: relative;
+	justify-content: space-around;
+}
+
+
+/*------------------------------------ Responsive 576px - 900 px (tablets) -----------------------------------*/
+
+@media (max-width: 900px) and (min-width: 576) {
+
+	.Menu ul ul {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		padding: 0.5rem 0;
+	}
+
+	.Menu ul li a {
+		font-size: 16px;
+	}
+}
+
+
+
+
+/*------------------------------------ Responsive 576px (celulares) -----------------------------------*/
+
+@media (max-width: 576px) {
+	
+	.Menu ul ul {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		padding: 0.5rem 0;
+	}
+
+	.Menu ul li a {
+		font-size: 16px;
+	}
+
+}
