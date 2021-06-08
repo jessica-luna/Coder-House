@@ -20,11 +20,11 @@
 		ul {
 			background-image: linear-gradient($color-principal,$color-secundario);
 			list-style: none;
-		
+
 			li {
 				position: relative;
 				float: left;
-				
+
 				a {
 					color: $color-menu;
 					text-decoration: none;
@@ -35,7 +35,7 @@
 
 				&:hover {
 					color: $color-blanco;
-				font-size: 1.6rem;
+					font-size: 1.6rem;
 				}
 
 				&:hover>ul {
@@ -49,7 +49,7 @@
 					position: absolute;
 					top: 100%;
 					left: 0;
-					padding: 1rem 0;
+					padding: 1rem 0;					
 
 					li {
 						padding-top: 7px;
@@ -193,7 +193,7 @@
 	
 					&:hover {
 						color: $color-blanco;
-					font-size: 1.6rem;
+						font-size: 1.6rem;
 					}
 	
 					&:hover>ul {

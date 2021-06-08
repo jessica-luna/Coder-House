@@ -275,12 +275,7 @@ $listaDeImagenesDeColeccion : ImgColeccion1, ImgColeccion2, ImgColeccion3, ImgCo
 
 }
 
-.dropdown-menu {
-	visibility: hidden;
-	& .dropdown-menu:hover {
-		visibility:visible;
-	}
-}
+
 
 .botonDesplegable {
 	border: solid 1px $color-principal;
