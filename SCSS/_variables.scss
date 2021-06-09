@@ -1,7 +1,9 @@
-$color-fondo: #FAF9F6;
-$color-rosaFuerte: #FDB8B6;
+/*------------ Paleta de Colores ------------*/
+
+$color-humo: #FAF9F6;
 $color-rosaSuave: #faeff0;
-$color-rosaExtra: #F7D9DC;
+$color-rosaMedio: #F7D9DC;
+$color-rosaFuerte: #FDB8B6;
 $color-marron: #74605B;
 $color-marroncito: #9B8884;
 $color-blanco: white;
@@ -9,28 +11,39 @@ $color-moradito: #A9B0CB;
 $color-clarito: #FFF9F5;
 
 
+/*------------ Asignación de Colores ------------*/
+
+$color-fondo: $color-humo;
 $color-principal: $color-rosaFuerte;
 $color-secundario: $color-rosaSuave;
+
+$color-tituloPagina: $color-marron;
+$color-titulos: $color-marron;
+$color-subtitulos: $color-marron;
 $color-parrafos: $color-marroncito;
 $color-texto: $color-marroncito;
 $color-menu: $color-marron;
-$color-botonSeleccionado: $color-marron;
 $color-cabeceras: $color-moradito;
+$color-footer: $color-marron;
 
+$color-botonSeleccionado: $color-marron;
+
+
+/*------------ Fuentes de texto ------------*/
 
 $Titulo-pagina: bolder 3em "Playfair Display", serif ;
-$color-titulo-pagina: $color-marron;
-
 $fuente-titulo: bolder 2em "Playfair Display", serif;
-$color-titulo: $color-marron;
-
 $fuente-subtitulos: bolder 20px "Lora", serif;
-$color-subtitulos: $color-marron;
-
 $fuente-textos: 1em "Lora", serif;
-
 $titulo-footer: bolder 1em "Playfair Display", serif;
 $texto-footer: bold 0.8em "Lora", serif;
-$color-footer: $color-marron;
+
+
+/*------------ Mixins ------------*/
+
+@mixin espacioEntreSecciones {
+    margin-top: 20px;
+	margin-bottom: 20px;
+}
 
 
