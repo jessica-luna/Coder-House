@@ -8,7 +8,7 @@
 	border-style: ridge;
 	border-width:5px;
 	border-color:$color-principal;
-	margin-top: 20px;
+	@include espacioEntreSecciones;
 }
 
 #divTextoNosotros {
@@ -44,8 +44,7 @@
 	background-color: $color-rosaSuave;
 	padding: 10px;
 	height: fit-content;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	@include espacioEntreSecciones;
 }
 
 #tituloColecciones {
@@ -100,6 +99,7 @@ $listaDeImagenesDeColeccion : ImgColeccion1, ImgColeccion2, ImgColeccion3, ImgCo
 
 #containerTiendas {
 	background-color: $color-secundario;
+	@include espacioEntreSecciones;
 }
 
 #tituloTiendas {
