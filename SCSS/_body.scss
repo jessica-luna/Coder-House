@@ -39,6 +39,7 @@
 	align-content: center;
 }
 
+/* Sección Colecciones */
 
 #containerColecciones {
 	background-color: $color-rosaSuave;
@@ -98,14 +99,12 @@ $listaDeImagenesDeColeccion : ImgColeccion1, ImgColeccion2, ImgColeccion3, ImgCo
 /* Sección Tiendas */
 
 #containerTiendas {
-	background-color: $color-secundario;
 	@include espacioEntreSecciones;
 }
 
 #tituloTiendas {
 	padding-top: 20px;
 	padding-bottom: 10px;
-	background-color: $color-secundario;
 }
 
 
@@ -187,11 +186,26 @@ $listaDeImagenesDeColeccion : ImgColeccion1, ImgColeccion2, ImgColeccion3, ImgCo
 
 
 /*----------- Tabla Listado de Productos -----------*/
+
+.seccionCatalogo {
+	background-color: radial-gradient($color-secundario);
+	@include espacioEntreSecciones;
+}
+
+.contenedorTabla {
+	width: 80vw;
+}
+
 .Tabla{
 	border-spacing:0px;
 	border: 6px;
 	border-color: $color-principal;
 	padding-left: 10%;
+	width: 80vw;
+
+	td {
+		@include bordesRosados;
+	}
 }
 
 .TablaHeader{
@@ -242,9 +256,6 @@ $listaDeImagenesDeColeccion : ImgColeccion1, ImgColeccion2, ImgColeccion3, ImgCo
 
 /*-------------------------- Página COLECCIONES -------------------------- */
 
-
-/* Sección Colecciones */
-
 .paginaColecciones {
 	div {		
 		h2 {
@@ -263,6 +274,17 @@ $listaDeImagenesDeColeccion : ImgColeccion1, ImgColeccion2, ImgColeccion3, ImgCo
 	}
 }
 
+.columnaColeccion {
+		display: flex;
+		flex-direction: column;
+		justify-items: center;
+		align-items: center;
+		justify-content: center;
+		align-content: center;
+		margin-top: 30px;
+		margin-bottom: 30px;				
+}
+
 .divColumna {	
 
 	div {	
@@ -275,11 +297,9 @@ $listaDeImagenesDeColeccion : ImgColeccion1, ImgColeccion2, ImgColeccion3, ImgCo
 
 }
 
-
-
-.botonDesplegable {
-	border: solid 1px $color-principal;
+#botonDesplegable {
 	border-radius: 20px;
+	@include bordesRosados;
 	color: $color-blanco;
 	font-size: 1.1rem;
 	text-decoration: none;
@@ -420,9 +440,75 @@ $listaDeImagenesDeColeccion : ImgColeccion1, ImgColeccion2, ImgColeccion3, ImgCo
 	.Menu ul li a {
 		font-size: 16px;
 	}
+
+	/* Sección Colecciones */
+
+	#containerTiendas {
+		@include espacioEntreSecciones;
+	}
+
+	#tituloTiendas {
+		padding-top: 20px;
+		padding-bottom: 10px;
+	}
+
+
+	.seccionTiendasGrid {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 25% 25% 25% 25%;
+		grid-template-areas:
+			"mapa mapa"
+			"mapa mapa"
+			"tiendaUno tiendaDos" 
+			"tiendaTres tiendaCuatro";
+		align-items: center;
+		justify-content: space-around;
+		justify-items: center;
+		height: 80vh;
+	}
+
+	.divTienda {
+		border-color: $color-principal;
+		border-width: 4px;
+		border-style: outset;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		width: 90%;
+	}
+
+
+	.titTienda {
+		font-weight: bold;
+	}
+
+	.direccionTienda {
+		padding: 15px;
+	}
+
+	#mapaTiendas {
+		grid-area: mapa;
+		width: 80%;
+	}
+
+	#divTienda1 {
+		grid-area: tiendaUno;
+	}
+
+	#divTienda2 {
+		grid-area: tiendaDos;
+	}
+
+	#divTienda3 {
+		grid-area: tiendaTres;
+	}
+
+	#divTienda4 {
+		grid-area: tiendaCuatro;
+	}
 }
-
-
 
 
 /*------------------------------------ Responsive 576px (celulares) -----------------------------------*/
@@ -441,4 +527,71 @@ $listaDeImagenesDeColeccion : ImgColeccion1, ImgColeccion2, ImgColeccion3, ImgCo
 		font-size: 16px;
 	}
 
+	/* Sección Colecciones */
+	
+	#containerTiendas {
+		@include espacioEntreSecciones;
+	}
+
+	#tituloTiendas {
+		padding-top: 20px;
+		padding-bottom: 10px;
+	}
+
+
+	.seccionTiendasGrid {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 25% 25% 25% 25%;
+		grid-template-areas:
+			"mapa mapa"
+			"mapa mapa"
+			"tiendaUno tiendaDos" 
+			"tiendaTres tiendaCuatro";
+		align-items: center;
+		justify-content: space-around;
+		justify-items: center;
+		height: 80vh;
+	}
+
+	.divTienda {
+		border-color: $color-principal;
+		border-width: 4px;
+		border-style: outset;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		width: 90%;
+	}
+
+
+	.titTienda {
+		font-weight: bold;
+	}
+
+	.direccionTienda {
+		padding: 15px;
+	}
+
+	#mapaTiendas {
+		grid-area: mapa;
+		width: 60%;
+	}
+
+	#divTienda1 {
+		grid-area: tiendaUno;
+	}
+
+	#divTienda2 {
+		grid-area: tiendaDos;
+	}
+
+	#divTienda3 {
+		grid-area: tiendaTres;
+	}
+
+	#divTienda4 {
+		grid-area: tiendaCuatro;
+	}
 }

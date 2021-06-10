@@ -46,4 +46,7 @@ $texto-footer: bold 0.8em "Lora", serif;
 	margin-bottom: 20px;
 }
 
+@mixin bordesRosados {
+    border: solid 1px $color-principal;
+}
 

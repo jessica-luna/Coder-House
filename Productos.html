@@ -58,276 +58,336 @@
 	</header>
 
 	<main> <!--contenido-->
-		<section> <!-- Catálogo de Productos-->
+		<section class="seccionCatalogo">
+			<div class="container-fluid">
+				<div class="row">
+					<h2>Catálogo de Productos</h2>
+				</div>
+				<div class="row catalogo">
+					<div class="col-md-4 col-sm-6 columnaColeccion"	>
+						<div class="columnaColeccion">
+							<h3>Marbella</h3>
+							<img src="Assets/sandaliaMarbella.png" alt="Sandalias Marbella">
+							<p>Precio: S/. 179.00</p>
+						</div>			
+					</div>
+					<div class="col-md-4 col-sm-6 columnaColeccion">
+						<h3>Lyon</h3>
+						<img src="Assets/zapatillasLyon.png" alt="Zapatillas Lyon">
+						<p>Precio: S/. 199.00</p>
+					</div>
+					<div class="col-md-4 col-sm-6 columnaColeccion">
+						<h3>Verona</h3>
+						<img src="Assets/sandaliaVerona.png" alt="Sandalias Verona">
+						<p>Precio: S/. 189.00</p>
+					</div>
+					<div class="col-md-4 col-sm-6 columnaColeccion">
+						<h3>Ferrara</h3>
+						<img src="Assets/sandaliaFerrara.png" alt="Sandalias Ferrara">
+						<p>Precio: S/. 220.00</p>
+					</div>
+					<div class="col-md-4 col-sm-6 columnaColeccion">
+						<h3>Mykonos</h3>
+						<img src="Assets/flatMykonos.png" alt="Flats Mykonos">
+						<p>Precio: S/. 159.00</p>
+					</div>
+					<div class="col-md-4 col-sm-6 columnaColeccion">
+						<h3>Madrid</h3>
+						<img src="Assets/botasMadrid.png" alt="Botas Madrid">
+						<p>Precio: S/. 249.00</p>
+					</div>
+					<div class="col-md-4 col-sm-6 columnaColeccion">
+						<h3>Atenas</h3>
+						<img src="Assets/flatAtenas.png" alt="Flats Atenas">
+						<p>Precio: S/. 139.00</p>
+					</div>
+					<div class="col-md-4 col-sm-6 columnaColeccion">
+						<h3>Niza</h3>
+						<img src="Assets/zapatillasNiza.png" alt="Zapatillas Niza">
+						<p>Precio: S/. 199.00</p>
+					</div>
+					<div class="col-md-4 col-sm-6 columnaColeccion">
+						<h3>Barcelona</h3>
+						<img src="Assets/botasBarcelona.png" alt="Botas Barcelona">
+						<p>Precio: S/. 249.00</p>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		
+		<section class="contenedorProductos"> <!-- Catálogo de Productos-->
 			<h2>Listado de Productos</h2>
-			<br>
-			<br>
-			<table class="table">
-				<thead class="TablaHeader"> <!--Cabecera de la tabla-->
-					<tr>
-						<th class="cabeceraListaProductos">Colección</th>
-						<th class="cabeceraListaProductos">Tipo</th>
-						<th class="cabeceraListaProductos">Modelo</th>
-						<th class="cabeceraListaProductos">Color</th>
-						<th class="cabeceraListaProductos">Descripción</th>
-						<th class="cabeceraListaProductos">Tallas</th>
-						<th class="cabeceraListaProductos">Precio</th>
-					</tr>
-				</thead>
+			<div class="contenedorTabla">
+				<table class="Tabla">
+					<thead class="TablaHeader"> <!--Cabecera de la tabla-->
+						<tr>
+							<th class="cabeceraListaProductos">Colección</th>
+							<th class="cabeceraListaProductos">Tipo</th>
+							<th class="cabeceraListaProductos">Modelo</th>
+							<th class="cabeceraListaProductos">Color</th>
+							<th class="cabeceraListaProductos">Descripción</th>
+							<th class="cabeceraListaProductos">Tallas</th>
+							<th class="cabeceraListaProductos">Precio</th>
+						</tr>
+					</thead>
+	
+					<tbody class="TablaBody">
+						<tr> <!-- 1era Fila -->
+							<td rowspan="5">Verano 2021</td>
+							<td rowspan="3">Sandalias</td>
+							<td>Marbella</td>
+							<td>
+								<ul>
+									<li class="ListaColoresProductos">Camel</li>
+									<li class="ListaColoresProductos">Negro</li>
+									<li class="ListaColoresProductos">Blanco</li>
+								</ul>
+							</td>
+							<td>
+								<ul>
+									<li class="ListaDetalleProductos">Material: Ecocuero</li>
+									<li class="ListaDetalleProductos">Plataforma: 7cm</li>
+								</ul>
+							</td>
+							<td>
+								<ul>
+									<li class="ListaTallaProductos">35</li>
+									<li class="ListaTallaProductos">36</li>
+									<li class="ListaTallaProductos">37</li>
+									<li class="ListaTallaProductos">38</li>
+									<li class="ListaTallaProductos">39</li>
+								</ul>
+							</td>
+							<td> S/. 179.00</td>
+						</tr>
+	
+						<tr> <!-- 2da Fila -->
+							<td>Verona</td>
+							<td>
+								<ul>
+									<li class="ListaColoresProductos">Lila</li>
+									<li class="ListaColoresProductos">Rosado</li>
+								</ul>
+							</td>
+							<td>
+								<ul>
+									<li class="ListaDetalleProductos">Material: Sueder</li>
+									<li class="ListaDetalleProductos">Plataforma: 7cm</li>
+								</ul>
+							</td>
+							<td>
+								<ul>
+									<li class="ListaTallaProductos">35</li>
+									<li class="ListaTallaProductos">36</li>
+									<li class="ListaTallaProductos">37</li>
+									<li class="ListaTallaProductos">38</li>
+									<li class="ListaTallaProductos">39</li>
+								</ul>
+							</td>
+							<td> S/. 220.00</td>
+						</tr>
+	
+						<tr> <!-- 3era Fila -->
+							<td>Ferrara</td>
+							<td>
+								<ul>
+									<li class="ListaColoresProductos">Negro</li>
+									<li class="ListaColoresProductos">Blanco</li>
+								</ul>
+							</td>
+							<td>
+								<ul>
+									<li class="ListaDetalleProductos">Material: Sueder</li>
+									<li class="ListaDetalleProductos">Plataforma: 5cm</li>
+								</ul>
+							</td>
+							<td>
+								<ul>
+									<li class="ListaTallaProductos">35</li>
+									<li class="ListaTallaProductos">36</li>
+									<li class="ListaTallaProductos">37</li>
+									<li class="ListaTallaProductos">38</li>
+									<li class="ListaTallaProductos">39</li>
+								</ul>
+							</td>
+							<td> S/. 159.00</td>
+						</tr>
+	
+						<tr> <!-- 4ta Fila -->
+							<td rowspan="2">Flats</td>
+							<td>Mykonos</td>
+							<td>
+								<ul>
+									<li class="ListaColoresProductos">Camel</li>
+									<li class="ListaColoresProductos">Beige</li>
+								</ul>
+							</td>
+							<td>
+								<ul>
+									<li class="ListaDetalleProductos">Material: Sueder</li>
+									<li class="ListaDetalleProductos">Planta antideslizante</li>
+								</ul>
+							</td>
+							<td>
+								<ul>
+									<li class="ListaTallaProductos">35</li>
+									<li class="ListaTallaProductos">36</li>
+									<li class="ListaTallaProductos">37</li>
+									<li class="ListaTallaProductos">38</li>
+									<li class="ListaTallaProductos">39</li>
+								</ul>
+							</td>
+							<td> S/. 159.00</td>
+						</tr>
+	
+						<tr> <!-- 5ta Fila -->
+							<td>Atenas</td>
+							<td>
+								<ul>
+									<li class="ListaColoresProductos">Celeste</li>
+									<li class="ListaColoresProductos">Animal Print Vaca</li>
+								</ul>
+							</td>
+							<td>
+								<ul>
+									<li class="ListaDetalleProductos">Material: Simil cuero</li>
+									<li class="ListaDetalleProductos">Planta antideslizante</li>
+								</ul>
+							</td>
+							<td>
+								<ul>
+									<li class="ListaTallaProductos">35</li>
+									<li class="ListaTallaProductos">36</li>
+									<li class="ListaTallaProductos">37</li>
+									<li class="ListaTallaProductos">38</li>
+									<li class="ListaTallaProductos">39</li>
+								</ul>
+							</td>
+							<td> S/. 139.00</td>
+						</tr>
+	
+						<tr> <!-- 6ta Fila -->
+							<td rowspan="4">Invierno 2021</td>
+							<td rowspan="2">Zapatillas</td>
+							<td>Niza</td>
+							<td>
+								<ul>
+									<li class="ListaColoresProductos">Blanco</li>
+									<li class="ListaColoresProductos">Negro</li>
+								</ul>
+							</td>
+							<td>
+								<ul>
+									<li class="ListaDetalleProductos">Material: Ecocuero</li>
+									<li class="ListaDetalleProductos">Plataforma: 7cm</li>
+								</ul>
+							</td>
+							<td>
+								<ul>
+									<li class="ListaTallaProductos">35</li>
+									<li class="ListaTallaProductos">36</li>
+									<li class="ListaTallaProductos">37</li>
+									<li class="ListaTallaProductos">38</li>
+									<li class="ListaTallaProductos">39</li>
+								</ul>
+							</td>
+							<td> S/. 199.00</td>
+						</tr>
+	
+						<tr> <!-- 7ma Fila -->
+							<td>Lyon</td>
+							<td>
+								<ul>
+									<li class="ListaColoresProductos">Blanco</li>
+									<li class="ListaColoresProductos">Negro</li>
+								</ul>
+							</td>
+							<td>
+								<ul>
+									<li class="ListaDetalleProductos">Material: Ecocuero</li>
+									<li class="ListaDetalleProductos">Plataforma: 5cm</li>
+								</ul>
+							</td>
+							<td>
+								<ul>
+									<li class="ListaTallaProductos">35</li>
+									<li class="ListaTallaProductos">36</li>
+									<li class="ListaTallaProductos">37</li>
+									<li class="ListaTallaProductos">38</li>
+									<li class="ListaTallaProductos">39</li>
+								</ul>
+							</td>
+							<td> S/. 199.00</td>
+						</tr>
+	
+						<tr> <!-- 8va Fila -->
+							<td rowspan="2">Botas</td>
+							<td>Barcelona</td>
+							<td>
+								<ul>
+									<li class="ListaColoresProductos">Blanco</li>
+									<li class="ListaColoresProductos">Negro</li>
+									<li class="ListaColoresProductos">Verde Militar</li>
+								</ul>
+							</td>
+							<td>
+								<ul>
+									<li class="ListaDetalleProductos">Material: Ecocuero</li>
+									<li class="ListaDetalleProductos">Caña: Alta</li>
+									<li class="ListaDetalleProductos">Plataforma: 3cm</li>
+								</ul>
+							</td>
+							<td>
+								<ul>
+									<li class="ListaTallaProductos">35</li>
+									<li class="ListaTallaProductos">36</li>
+									<li class="ListaTallaProductos">37</li>
+									<li class="ListaTallaProductos">38</li>
+									<li class="ListaTallaProductos">39</li>
+								</ul>
+							</td>
+							<td> S/. 249.00</td>
+						</tr>
+	
+						<tr> <!-- 9na Fila -->
+							<td>Madrid</td>
+							<td>
+								<ul>
+									<li class="ListaColoresProductos">Blanco</li>
+									<li class="ListaColoresProductos">Negro</li>
+									<li class="ListaColoresProductos">Verde Militar</li>
+								</ul>
+							</td>
+							<td>
+								<ul>
+									<li class="ListaDetalleProductos">Material: Ecocuero</li>
+									<li class="ListaDetalleProductos">Caña: Media</li>
+									<li class="ListaDetalleProductos">Plataforma: 3cm</li>
+								</ul>
+							</td>
+							<td>
+								<ul>
+									<li class="ListaTallaProductos">35</li>
+									<li class="ListaTallaProductos">36</li>
+									<li class="ListaTallaProductos">37</li>
+									<li class="ListaTallaProductos">38</li>
+									<li class="ListaTallaProductos">39</li>
+								</ul>
+							</td>
+							<td> S/. 249.00</td>
+						</tr>
+					</tbody>
+	
+					<tfoot class="TablaFooter">
+						<tr>
+							<td colspan="7">Todos nuestros zapatos son hechos por artesanos zapateros. Estás comprando producto nacional.</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
 
-				<tbody class="TablaBody">
-					<tr> <!-- 1era Fila -->
-						<td rowspan="5">Verano 2021</td>
-						<td rowspan="3">Sandalias</td>
-						<td>Marbella</td>
-						<td>
-							<ul>
-								<li class="ListaColoresProductos">Camel</li>
-								<li class="ListaColoresProductos">Negro</li>
-								<li class="ListaColoresProductos">Blanco</li>
-							</ul>
-						</td>
-						<td>
-							<ul>
-								<li class="ListaDetalleProductos">Material: Ecocuero</li>
-								<li class="ListaDetalleProductos">Plataforma: 7cm</li>
-							</ul>
-						</td>
-						<td>
-							<ul>
-								<li class="ListaTallaProductos">35</li>
-								<li class="ListaTallaProductos">36</li>
-								<li class="ListaTallaProductos">37</li>
-								<li class="ListaTallaProductos">38</li>
-								<li class="ListaTallaProductos">39</li>
-							</ul>
-						</td>
-						<td> S/. 179.00</td>
-					</tr>
-
-					<tr> <!-- 2da Fila -->
-						<td>Verona</td>
-						<td>
-							<ul>
-								<li class="ListaColoresProductos">Lila</li>
-								<li class="ListaColoresProductos">Rosado</li>
-							</ul>
-						</td>
-						<td>
-							<ul>
-								<li class="ListaDetalleProductos">Material: Sueder</li>
-								<li class="ListaDetalleProductos">Plataforma: 7cm</li>
-							</ul>
-						</td>
-						<td>
-							<ul>
-								<li class="ListaTallaProductos">35</li>
-								<li class="ListaTallaProductos">36</li>
-								<li class="ListaTallaProductos">37</li>
-								<li class="ListaTallaProductos">38</li>
-								<li class="ListaTallaProductos">39</li>
-							</ul>
-						</td>
-						<td> S/. 220.00</td>
-					</tr>
-
-					<tr> <!-- 3era Fila -->
-						<td>Ferrara</td>
-						<td>
-							<ul>
-								<li class="ListaColoresProductos">Negro</li>
-								<li class="ListaColoresProductos">Blanco</li>
-							</ul>
-						</td>
-						<td>
-							<ul>
-								<li class="ListaDetalleProductos">Material: Sueder</li>
-								<li class="ListaDetalleProductos">Plataforma: 5cm</li>
-							</ul>
-						</td>
-						<td>
-							<ul>
-								<li class="ListaTallaProductos">35</li>
-								<li class="ListaTallaProductos">36</li>
-								<li class="ListaTallaProductos">37</li>
-								<li class="ListaTallaProductos">38</li>
-								<li class="ListaTallaProductos">39</li>
-							</ul>
-						</td>
-						<td> S/. 159.00</td>
-					</tr>
-
-					<tr> <!-- 4ta Fila -->
-						<td rowspan="2">Flats</td>
-						<td>Mykonos</td>
-						<td>
-							<ul>
-								<li class="ListaColoresProductos">Camel</li>
-								<li class="ListaColoresProductos">Beige</li>
-							</ul>
-						</td>
-						<td>
-							<ul>
-								<li class="ListaDetalleProductos">Material: Sueder</li>
-								<li class="ListaDetalleProductos"Planta antideslizante</li>
-							</ul>
-						</td>
-						<td>
-							<ul>
-								<li class="ListaTallaProductos">35</li>
-								<li class="ListaTallaProductos">36</li>
-								<li class="ListaTallaProductos">37</li>
-								<li class="ListaTallaProductos">38</li>
-								<li class="ListaTallaProductos">39</li>
-							</ul>
-						</td>
-						<td> S/. 159.00</td>
-					</tr>
-
-					<tr> <!-- 5ta Fila -->
-						<td>Atenas</td>
-						<td>
-							<ul>
-								<li class="ListaColoresProductos">Celeste</li>
-								<li class="ListaColoresProductos">Animal Print Vaca</li>
-							</ul>
-						</td>
-						<td>
-							<ul>
-								<li class="ListaDetalleProductos">Material: Simil cuero</li>
-								<li class="ListaDetalleProductos">Planta antideslizante</li>
-							</ul>
-						</td>
-						<td>
-							<ul>
-								<li class="ListaTallaProductos">35</li>
-								<li class="ListaTallaProductos">36</li>
-								<li class="ListaTallaProductos">37</li>
-								<li class="ListaTallaProductos">38</li>
-								<li class="ListaTallaProductos">39</li>
-							</ul>
-						</td>
-						<td> S/. 139.00</td>
-					</tr>
-
-					<tr> <!-- 6ta Fila -->
-						<td rowspan="4">Invierno 2021</td>
-						<td rowspan="2">Zapatillas</td>
-						<td>Niza</td>
-						<td>
-							<ul>
-								<li class="ListaColoresProductos">Blanco</li>
-								<li class="ListaColoresProductos">Negro</li>
-							</ul>
-						</td>
-						<td>
-							<ul>
-								<li class="ListaDetalleProductos">Material: Ecocuero</li>
-								<li class="ListaDetalleProductos">Plataforma: 7cm</li>
-							</ul>
-						</td>
-						<td>
-							<ul>
-								<li class="ListaTallaProductos">35</li>
-								<li class="ListaTallaProductos">36</li>
-								<li class="ListaTallaProductos">37</li>
-								<li class="ListaTallaProductos">38</li>
-								<li class="ListaTallaProductos">39</li>
-							</ul>
-						</td>
-						<td> S/. 199.00</td>
-					</tr>
-
-					<tr> <!-- 7ma Fila -->
-						<td>Lyon</td>
-						<td>
-							<ul>
-								<li class="ListaColoresProductos">Blanco</li>
-								<li class="ListaColoresProductos">Negro</li>
-							</ul>
-						</td>
-						<td>
-							<ul>
-								<li class="ListaDetalleProductos">Material: Ecocuero</li>
-								<li class="ListaDetalleProductos">Plataforma: 5cm</li>
-							</ul>
-						</td>
-						<td>
-							<ul>
-								<li class="ListaTallaProductos">35</li>
-								<li class="ListaTallaProductos">36</li>
-								<li class="ListaTallaProductos">37</li>
-								<li class="ListaTallaProductos">38</li>
-								<li class="ListaTallaProductos">39</li>
-							</ul>
-						</td>
-						<td> S/. 199.00</td>
-					</tr>
-
-					<tr> <!-- 8va Fila -->
-						<td rowspan="2">Botas</td>
-						<td>Barcelona</td>
-						<td>
-							<ul>
-								<li class="ListaColoresProductos">Blanco</li>
-								<li class="ListaColoresProductos">Negro</li>
-								<li class="ListaColoresProductos">Verde Militar</li>
-							</ul>
-						</td>
-						<td>
-							<ul>
-								<li class="ListaDetalleProductos">Material: Ecocuero</li>
-								<li class="ListaDetalleProductos">Caña: Alta</li>
-								<li class="ListaDetalleProductos">Plataforma: 3cm</li>
-							</ul>
-						</td>
-						<td>
-							<ul>
-								<li class="ListaTallaProductos">35</li>
-								<li class="ListaTallaProductos">36</li>
-								<li class="ListaTallaProductos">37</li>
-								<li class="ListaTallaProductos">38</li>
-								<li class="ListaTallaProductos">39</li>
-							</ul>
-						</td>
-						<td> S/. 249.00</td>
-					</tr>
-
-					<tr> <!-- 9na Fila -->
-						<td>Madrid</td>
-						<td>
-							<ul>
-								<li class="ListaColoresProductos">Blanco</li>
-								<li class="ListaColoresProductos">Negro</li>
-								<li class="ListaColoresProductos">Verde Militar</li>
-							</ul>
-						</td>
-						<td>
-							<ul>
-								<li class="ListaDetalleProductos">Material: Ecocuero</li>
-								<li class="ListaDetalleProductos">Caña: Media</li>
-								<li class="ListaDetalleProductos">Plataforma: 3cm</li>
-							</ul>
-						</td>
-						<td>
-							<ul>
-								<li class="ListaTallaProductos">35</li>
-								<li class="ListaTallaProductos">36</li>
-								<li class="ListaTallaProductos">37</li>
-								<li class="ListaTallaProductos">38</li>
-								<li class="ListaTallaProductos">39</li>
-							</ul>
-						</td>
-						<td> S/. 249.00</td>
-					</tr>
-				</tbody>
-
-				<tfoot class="TablaFooter">
-					<tr>
-						<td colspan="7">Todos nuestros zapatos son hechos por artesanos zapateros. Estás comprando producto nacional.</td>
-					</tr>
-				</tfoot>
-			</table>
+			
 		</section>
 	</main>
 
