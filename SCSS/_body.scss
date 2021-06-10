@@ -192,6 +192,15 @@ $listaDeImagenesDeColeccion : ImgColeccion1, ImgColeccion2, ImgColeccion3, ImgCo
 	@include espacioEntreSecciones;
 }
 
+.tituloProductos {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	@include animFadeInUp;
+}
+
+
+
 .contenedorTabla {
 	width: 80vw;
 }
@@ -282,7 +291,8 @@ $listaDeImagenesDeColeccion : ImgColeccion1, ImgColeccion2, ImgColeccion3, ImgCo
 		justify-content: center;
 		align-content: center;
 		margin-top: 30px;
-		margin-bottom: 30px;				
+		margin-bottom: 30px;
+		@include animZoomIn;		
 }
 
 .divColumna {	
