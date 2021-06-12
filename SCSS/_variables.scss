@@ -46,4 +46,16 @@ $texto-footer: bold 0.8em "Lora", serif;
 	margin-bottom: 20px;
 }
 
+@mixin bordesRosados {
+    border: solid 1px $color-principal;
+}
 
+@mixin animFadeInUp {
+    animation: fadeInUp;
+	animation-duration: 3s;
+}
+
+@mixin animZoomIn {
+    animation: zoomIn; 
+    animation-duration: 3s;
+}
