@@ -1,3 +1,17 @@
+.navbar {
+	z-index: 999999;
+
+	.dropdown-menu {
+		z-index: 999999;
+		overflow: visible;
+	}
+}
+
+#navbardrop {
+	z-index: 999999;
+	overflow: visible;
+}
+
 .navbar-toggler {
 	padding: 10px;
 	margin: 10px;
@@ -39,6 +53,7 @@
 	}
 }
 
+
 .menuPrincipal {
 	background-image: linear-gradient($color-principal,$color-secundario);
 	padding: 15px;
@@ -78,10 +93,11 @@
 	.dropdown-menu {
 		background-image: linear-gradient($color-principal,$color-secundario);;
 		position: absolute;
+
 		a {
 			color: $color-menu;
 			text-decoration: none;
-	
+		
 			&:hover {
 				color: $color-moradito;
 			}
