@@ -7,6 +7,10 @@
 	}
 }
 
+.sticky-top {
+	z-index: 999999;
+}
+
 #navbardrop {
 	z-index: 999999;
 	overflow: visible;
@@ -57,7 +61,7 @@
 .menuPrincipal {
 	background-image: linear-gradient($color-principal,$color-secundario);
 	padding: 15px;
-
+	
 	a {
 		color: $color-menu;
 		text-decoration: none;
@@ -90,9 +94,14 @@
 		}
 	}
 
+	li {
+		z-index: 999999;
+	}
+
 	.dropdown-menu {
 		background-image: linear-gradient($color-principal,$color-secundario);;
 		position: absolute;
+
 
 		a {
 			color: $color-menu;
@@ -100,11 +109,13 @@
 		
 			&:hover {
 				color: $color-moradito;
+				z-index: 999999;
 			}
 	
 			&:focus {
 				color: $color-principal;
 				font-weight: bolder;
+				z-index: 999999;
 			}
 		}
 	
