@@ -220,6 +220,13 @@ $listaDeImagenesDeColeccion : ImgColeccion1, ImgColeccion2, ImgColeccion3, ImgCo
 		}
 	}
 }
+.barrita {
+	background-image: radial-gradient($color-clarito,$color-moradito);
+	position: -webkit-sticky;
+  	position: sticky;
+  	top: 100px;
+	z-index: 2;
+}
 
 .columnaColeccion {
 		display: flex;
@@ -259,40 +266,77 @@ $listaDeImagenesDeColeccion : ImgColeccion1, ImgColeccion2, ImgColeccion3, ImgCo
 
 /*-------------------------- Página PREGUNTAS -------------------------- */
 
-#PreguntasFrecuentes{
+.contenedorFondo{	
+	background-image: url("../Assets/FondoPreguntas.png");	
+	background-size: contain;
+	background-blend-mode: soft-light;
+
+}
+
+.contenedorSeccionP {
+	background-image: radial-gradient($color-clarito,$color-rosaMedio);
+	position: -webkit-sticky;
+  	position: sticky;
+  	top: 100px;
+}
+
+.contenedorPregunta {
+	padding: 15px;
+	@include espacioEntreSecciones;
+	white-space: nowrap;
+
+	.listaNumerada{
+
+		li {
+			padding-left: 30px;
+			list-style: decimal;
+			list-style-position: inside;
+			line-height: 1.5;
+			color: $color-texto;
+			font-weight:normal;
+		}
+				
+	}
+
+	h3 {
+		font-weight: bolder;
+	}
+
+	p {
+		font-weight: bolder;	
+	}
+
+	.listaSinNumerar {
+		li {
+			padding-left: 30px;
+			list-style: lower-latin;
+			list-style-position: inside;
+			line-height: 1.5;
+			color: $color-texto;
+			font-weight:normal;
+		}
 	
-	background-image: url("Assets/FondoPreguntas.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100%;
+		.listaSinNumerar2 {
+			li {
+				padding-left: 50px;
+				list-style: disc;
+				list-style-position: inside;
+				line-height: 1.5;
+				color: $color-texto;
+				font-weight:normal;
+		
+			}
+		}
+	
+	}
+
+
 }
 
-.listaNumerada1{
-	padding-left: 30px;
-	list-style: decimal;
-	list-style-position: inside;
-	line-height: 1.5;
-	color: $color-texto;
-	font-weight:bold;
-}
 
-.listaSinNumerar1{
-	padding-left: 30px;
-	list-style: lower-latin;
-	list-style-position: inside;
-	line-height: 1.5;
-	color: $color-texto;
-	font-weight:bold;
-}
 
-.listaSinNumerar2{
-	padding-left: 50px;
-	list-style: disc;
-	list-style-position: inside;
-	line-height: 1.5;
-	color: $color-texto;
-	font-weight:bold;
-}
+
+
 
 
 
@@ -377,18 +421,7 @@ $listaDeImagenesDeColeccion : ImgColeccion1, ImgColeccion2, ImgColeccion3, ImgCo
 
 @media (max-width: 900px) and (min-width: 576) {
 
-	.Menu ul ul {
-		display: none;
-		position: absolute;
-		top: 100%;
-		left: 0;
-		padding: 0.5rem 0;
-	}
-
-	.Menu ul li a {
-		font-size: 16px;
-	}
-
+	
 	/* Sección Colecciones */
 
 	#containerTiendas {
@@ -471,18 +504,7 @@ $listaDeImagenesDeColeccion : ImgColeccion1, ImgColeccion2, ImgColeccion3, ImgCo
 
 @media (max-width: 576px) {
 	
-	.Menu ul ul {
-		display: none;
-		position: absolute;
-		top: 100%;
-		left: 0;
-		padding: 0.5rem 0;
-	}
-
-	.Menu ul li a {
-		font-size: 16px;
-	}
-
+	
 	/* Sección Colecciones */
 	
 	#containerTiendas {
@@ -577,6 +599,30 @@ $listaDeImagenesDeColeccion : ImgColeccion1, ImgColeccion2, ImgColeccion3, ImgCo
 		padding: 5px;
 		margin: 10px;
 		border-radius: 5px;
+	}
+
+	/*-------------------------- Página PREGUNTAS -------------------------- */
+
+	.contenedorFondo{	
+		background-image: url("../Assets/FondoPreguntas.png");	
+		background-size: cover;
+	
+	}
+
+	.contenedorSeccionP {
+		background-image: radial-gradient($color-clarito,$color-rosaMedio);
+		position: -webkit-sticky;
+		position: sticky;
+		top: 100px;
+	}
+
+	.contenedorPregunta {
+		padding: 15px;
+		@include espacioEntreSecciones;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+
 	}
 
 }
