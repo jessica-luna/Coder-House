@@ -29,7 +29,28 @@ h1 {
     color: $color-tituloPagina;
 	letter-spacing: 5px;;
 	text-align: center;
-	position: absolute;
-	
+	position: absolute;	
 }
 
+/*------------------------------------ Responsive 576px - 900 px (tablets) -----------------------------------*/
+
+@media (max-width: 900px) and (min-width: 576) {
+
+	h1 {
+		font-size: 2.5rem;
+	}
+
+}
+
+/*------------------------------------ Responsive 576px (celulares) -----------------------------------*/
+
+@media (max-width: 576px) {
+
+	h1 {
+		font-size: 2rem;
+		transform: translatex(10%);
+	}
+
+
+
+}
