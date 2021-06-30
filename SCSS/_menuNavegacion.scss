@@ -1,234 +1,130 @@
-.contenedorNavegador {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	overflow: visible;
-	align-items: center;
-	background-image: linear-gradient($color-principal,$color-secundario);
-	justify-content: space-around;
-	z-index: 9999999999;
-	
-	nav {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
-		justify-content: center;
-		align-items: center;
-		padding: 2rem 3rem;
-		background-image: linear-gradient($color-principal,$color-secundario);
-		width: 100%;
+.navbar-toggler {
+	padding: 10px;
+	margin: 10px;
 
-		ul {
-			background-image: linear-gradient($color-principal,$color-secundario);
-			list-style: none;
-
-			li {
-				position: relative;
-				float: left;
-
-				a {
-					color: $color-menu;
-					text-decoration: none;
-					padding: 15px;
-					font-size: 1.3rem;
-					font-weight: bold;
-				}
-
-				&:hover {
-					color: $color-blanco;
-					font-size: 1.6rem;
-				}
-
-				&:hover>ul {
-					display: block;
-					width: 115% ;
-					overflow: visible;
-				}
-
-				ul {
-					display: none;
-					position: absolute;
-					top: 100%;
-					left: 0;
-					padding: 1rem 0;					
-
-					li {
-						padding-top: 7px;
-					}
-				}
-			}
-
-		}
-
+	&:hover {
+		border-color: $color-principal;
+		font-weight: bolder;
+		border-radius: 10px;
+		border-width: 3px;
 	}
 
+	&:focus {
+		border-color: $color-blanco;
+		border-radius: 10px;
+		border-width: 3px;
+	}
 }
 
-#LogIn{
-	position: absolute;
-	right: 3%;
-	text-decoration: none;
-	color: $color-marroncito;
-	font-size:1.3rem;
-	font-weight: bolder;
-	padding-right: 10
+.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(116, 96, 91, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-nav.navbar-center {
+    position: relative;
+	left: 50%;
+	transform: translatex(-50%);
+	padding: 15px;
+}
+
+.navbar-nav.navbar-right {
+    position: absolute;
+	right: 0%;
+	transform: translatex(-10%);
+	margin: 15px;
+	
+	a {
+		margin: 15px;
+		font-weight: bolder;
+	}
+}
+
+.menuPrincipal {
+	background-image: linear-gradient($color-principal,$color-secundario);
+	padding: 15px;
+
+	a {
+		color: $color-menu;
+		text-decoration: none;
+		font: $fuente-menu;
+		
+		&:hover {
+			color: $color-blanco;
+		}
+
+		&:focus {
+			color: $color-principal;
+			font-weight: bolder;
+		}
+		
+	}
+
+	.nav-link {
+		color: $color-menu;
+		text-decoration: none;
+
+		&:hover {
+			color: $color-blanco;
+			font-weight: bolder;
+		}
+
+		&:focus {
+			color: $color-principal;
+			font-size: 1.1rem;
+			font-weight: bolder;
+		}
+	}
+
+	.dropdown-menu {
+		background-image: linear-gradient($color-principal,$color-secundario);;
+		position: absolute;
+		a {
+			color: $color-menu;
+			text-decoration: none;
+	
+			&:hover {
+				color: $color-moradito;
+			}
+	
+			&:focus {
+				color: $color-principal;
+				font-weight: bolder;
+			}
+		}
+	
+	}
+
+	.linkLogIn {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	
 }
 
 /*------------------------------------ Responsive 576px - 900 px (tablets) -----------------------------------*/
 
 @media (max-width: 900px) and (min-width: 576) {
 
-	.contenedorNavegador {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
-		align-items: center;
-		background-image: linear-gradient($color-principal,$color-secundario);
-		justify-content: space-around;
-		
-		nav {
-			display: flex;
-			flex-direction: row;
-			flex-wrap: nowrap;
-			justify-content: center;
-			align-items: center;
-			padding: 1rem 2rem;
-			background-image: linear-gradient($color-principal,$color-secundario);
-			width: 100%;
-	
-			ul {
-				background-image: linear-gradient($color-principal,$color-secundario);
-				list-style: none;
-			
-				li {
-					position: relative;
-					float: left;
-					
-					a {
-						color: $color-menu;
-						text-decoration: none;
-						padding: 5px;
-						font-size: 1rem;
-						font-weight: bold;
-					}
-	
-					&:hover {
-						color: $color-blanco;
-						font-size: 1.6rem;
-					}
-	
-					&:hover>ul {
-						display: block;
-						width: 115% ;
-					}
-	
-					ul {
-						display: none;
-						position: absolute;
-						top: 100%;
-						left: 0;
-						padding: 1rem 0;
-	
-						li {
-							padding-top: 7px;
-						}
-					}
-				}
-	
-			}
-	
-		}
-	
+	.navbar-nav.navbar-center {
+		position: relative;
+		left: 50%;
+		transform: translatex(-100%);
 	}
 	
-	#LogIn{
-		position: absolute;
-		right: 3%;
-		text-decoration: none;
-		color: $color-marroncito;
-		font-size:1.3rem;
-		font-weight: bolder;
-		padding-right: 10
-	}
 }
-
 
 
 /*------------------------------------ Responsive 576px (celulares) -----------------------------------*/
 
 @media (max-width: 576px) {
 	
-	.contenedorNavegador {
-		display: flex;
-		flex-direction: column;
-		flex-wrap: nowrap;
-		align-items: center;
-		background-image: linear-gradient($color-principal,$color-secundario);
-		justify-content: space-around;
-		
-		nav {
-			display: flex;
-			flex-direction: row;
-			flex-wrap: nowrap;
-			justify-content: center;
-			align-items: center;
-			padding: 1rem 2rem;
-			background-image: linear-gradient($color-principal,$color-secundario);
-			width: 100%;
-	
-			ul {
-				background-image: linear-gradient($color-principal,$color-secundario);
-				list-style: none;
-			
-				li {
-					position: relative;
-					float: left;
-					
-					a {
-						color: $color-menu;
-						text-decoration: none;
-						padding: 10px;
-						font-size: 0.8rem;
-						font-weight: bold;
-					}
-	
-					&:hover {
-						color: $color-blanco;
-						font-size: 1.6rem;
-					}
-	
-					&:hover>ul {
-						display: block;
-						width: 115% ;
-					}
-	
-					ul {
-						display: none;
-						position: absolute;
-						top: 100%;
-						left: 0;
-						padding: 1rem 0;
-	
-						li {
-							padding-top: 7px;
-						}
-					}
-				}
-	
-			}
-	
-		}
-	
-	}
-	
-	#LogIn{
-		position: absolute;
-		right: 3%;
-		text-decoration: none;
-		color: $color-marroncito;
-		font-size:1.3rem;
-		font-weight: bolder;
-		padding-right: 10
+	.navbar-nav.navbar-center {
+		position: relative;
+		left: 5%;
+		transform: translatex(0%);
 	}
 
+	
 }

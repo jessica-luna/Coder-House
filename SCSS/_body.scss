@@ -2,6 +2,11 @@
 	width: 100%;
 }
 
+.carousel-inner {
+	z-index: -1000;
+}
+
+
 /* Sección Nosotros */
 
 #containerNosotros {
@@ -57,10 +62,7 @@ $listaDeColecciones : Coleccion1, Coleccion2, Coleccion3, Coleccion4;
 
 @each $Colecciones in $listaDeColecciones {
 	#divColumna#{$Colecciones} {
-		border-color: $color-principal;
-		border-width: 3px;
-		border-style: solid;
-		padding: 15px;
+		padding: 20px;
 		display: flex;
 		flex-direction: column;
 		align-content: space-around;
@@ -454,6 +456,14 @@ $listaDeImagenesDeColeccion : ImgColeccion1, ImgColeccion2, ImgColeccion3, ImgCo
 	#divTienda4 {
 		grid-area: tiendaCuatro;
 	}
+
+	.botonColeccion{
+		font-size: 0.8rem;
+		font-weight: bold;
+		padding: 5px;
+		margin: 10px;
+		border-radius: 5px;
+	}
 }
 
 
@@ -540,4 +550,33 @@ $listaDeImagenesDeColeccion : ImgColeccion1, ImgColeccion2, ImgColeccion3, ImgCo
 	#divTienda4 {
 		grid-area: tiendaCuatro;
 	}
+
+	.SeccionTipo2{
+		padding: 20px 15px 20px 15px;
+		background-color: $color-secundario;
+	}
+	
+	.Tendencias { 		
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: space-between ;
+		padding-top: 30px;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 30px;
+
+		.videito {
+			column-gap: 5px;	
+		}
+	}
+	
+	.botonColeccion{
+		font-size: 0.8rem;
+		font-weight: bold;
+		padding: 5px;
+		margin: 10px;
+		border-radius: 5px;
+	}
+
 }
